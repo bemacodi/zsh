@@ -1,0 +1,59 @@
+sudo pacman -S zsh
+which zsh
+chsh -s $(which zsh)
+
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+vim .zshrc
+plugins=( zsh-syntax-highlighting
+source .zshrc
+
+
+git clone https://github.com/zsh-users/zsh-autosuggestions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+vim .zshrc
+plugins=( zsh-autosuggestions
+source .zshrc
+
+
+yay ttf-dejavu
+yay ttf-meslo-nerd-font-powerlevel10k
+
+
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+vim .zshrc 
+themes= "powerlevel10k/powerlevel10k"
+
+
+#icono terminal
+typeset -g POWERLEVEL9K_LINUX_ARTIX_ICON='󰣇'
+
+
+#gitstatus ps
+POWERLEVEL9K_DISABLE_GITSTATUS=true
+
+
+alias vi='vim'
+alias pac='sudo pacman -Syu'
+alias bor='sudo pacman -Rsn'
+alias rebo='sudo openrc-shutdown -r now'
+alias shut='sudo openrc-shutdown -p now'
+alias borr='sudo pacman -Rsn $(pacman -Qtdq)'
+alias ne='neofetch'
+alias pin='ping 8.8.8.8 -c 3'
+alias better='bash $HOME/Público/.betterlockscreen.sh'
+alias da='bash $HOME/Público/.hora.sh'
+alias bg='bash $HOME/Público/.bateria.sh'
+alias to='bash $HOME/Público/.top.sh'
+alias cache='sudo pacman -Sc --noconfirm'
+alias mon='sudo mount /dev/sdb1 usb'
+alias desmon='sudo umount /dev/sdb1'
+alias bspc='bspc wm -r'
+alias emoji='rofi -modi emoji -show emoji'
+alias calc='rofi -modi calc -show calc'
+alias vf='nvim'
+alias grubi='bash $HOME/Público/.grubi.sh'
+alias borrar='rm -rf .local/share/Trash/*'
+alias ex='exit'
