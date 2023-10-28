@@ -66,3 +66,5 @@ alias ya='yay -S'
 #vimrc
 set number
 syntax enable
+JeBrainsMono Nerd Font Mono ExtraBold
+'JetBrainsMonoMedium Nerd Font Mono'
