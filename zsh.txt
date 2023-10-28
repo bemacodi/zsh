@@ -68,3 +68,6 @@ set number
 syntax enable
 JeBrainsMono Nerd Font Mono ExtraBold
 'JetBrainsMonoMedium Nerd Font Mono'
+
+ttf-jetbrains-mono-nerd 3
+aur/nerd-fonts-jetbrains-mono-160 2.2
