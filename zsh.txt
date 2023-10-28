@@ -60,4 +60,4 @@ alias ex='exit'
 alias tarr='tar -xvf'
 alias tarz='tar -xzvf'
 alias cl='clear'
-alias ya="yay -S"
+alias ya='yay -S'
